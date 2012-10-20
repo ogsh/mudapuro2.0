@@ -15,6 +15,7 @@ public:
 	void Capture();
 	cv::Mat& GetColorImage();
 	cv::Mat& GetDepthImage();
+	cv::Mat_<unsigned short>& Depth();
 private:
 	int cImgWidth;
 	int cImgHeight;
@@ -31,7 +32,7 @@ private:
 	cv::Mat cImg;
 	cv::Mat dImg;
 
-	cv::Mat depth;
+	cv::Mat_<unsigned short> depth;
 	cv::Mat img;
 };
 
